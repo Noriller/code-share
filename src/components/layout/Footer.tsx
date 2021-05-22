@@ -3,12 +3,10 @@ import { Flex, Link, Text } from '@chakra-ui/layout';
 const Footer = () => (
   <Flex as="footer" width="full" align="center">
     <Text>
-      {new Date().getFullYear()}
-      {' '}
-      -
-      {' '}
-      <Link href="https://sznm.dev" isExternal>
-        sznm.dev
+      <Link href="https://github.com/noriller" isExternal>
+        {new Date().getFullYear()}
+        {' '}
+        - Noriller
       </Link>
     </Text>
   </Flex>

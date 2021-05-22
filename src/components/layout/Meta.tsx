@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const Meta = () => (
   <Head>
-    <title>Project Name</title>
+    <title>Code Share!</title>
   </Head>
 );
 

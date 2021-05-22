@@ -7,13 +7,15 @@ const Header = () => (
   <Flex as="header" width="full" align="center">
     <AccessibleLink href="/">
       <Heading as="h1" size="md">
-        nextchakra-starter
+        Code Sharing Made Easy!
       </Heading>
+      <Box fontSize="smaller">And, hopefully, bot free.</Box>
     </AccessibleLink>
 
     <Box marginLeft="auto">
       <ThemeToggle />
     </Box>
+
   </Flex>
 );
 
