@@ -1,11 +1,9 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-const Meta = () => {
-  return (
-    <Head>
-      <title>Project Name</title>
-    </Head>
-  );
-};
+const Meta = () => (
+  <Head>
+    <title>Project Name</title>
+  </Head>
+);
 
 export default Meta;

@@ -1,7 +1,7 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-const APP_NAME = "Code Share!";
-const APP_DESCRIPTION = "Share codes with friends and strangers!";
+const APP_NAME = 'Code Share!';
+const APP_DESCRIPTION = 'Share codes with friends and strangers!';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
