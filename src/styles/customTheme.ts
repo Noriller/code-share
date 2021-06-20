@@ -24,6 +24,8 @@ const customTheme = extendTheme({
     //   },
     // },
   },
+  initialColorMode: 'dark',
+  useSystemColorMode: true,
 });
 
 export default customTheme;

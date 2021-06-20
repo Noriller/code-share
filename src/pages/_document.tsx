@@ -1,4 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { ColorModeScript } from '@chakra-ui/react';
+import theme from '../styles/customTheme';
 
 const APP_NAME = 'Code Share!';
 const APP_DESCRIPTION = 'Share codes with friends and strangers!';
@@ -35,6 +37,7 @@ class MyDocument extends Document {
           <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
         </body>
