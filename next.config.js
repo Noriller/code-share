@@ -13,7 +13,4 @@ module.exports = withPWA({
     register: true,
   },
   target: 'serverless',
-  future: {
-    webpack5: true,
-  },
 });
