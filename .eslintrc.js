@@ -2,10 +2,14 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
+    'jest/globals': true,
   },
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:jest/recommended',
+    'plugin:jest/style',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -18,9 +22,11 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'jest',
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'import/prefer-default-export': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',
@@ -47,5 +53,6 @@ module.exports = {
         ignorePackages: true,
       },
     ],
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
   },
 };
